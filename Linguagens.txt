@@ -18,16 +18,3 @@ JogoOitoPecas([[1 2 3][4 5 6][7 8 0]])
 puxar(direcao), onde direcao é um dos elementos de ["cima", "baixo", "direita", "esquerda"].
 
 Essa ação realiza a movimentação do ladrilho localizado na direção escolhida (em relação à posição do ladrilho vazio) para o ladrilho vazio, trocando-os de lugar. Sua restrição é em caso de se puxar uma peça que não existe (como tentar puxar peças além das bordas).
-
-
-
-
-
-Então, dado um estado s, ACOES(s) -> [a1,a2,...,an], onde [a1,a2,...,an] é uma lista de ações válidas para o estado.
-
-Ex: ACOES(JogoOitoPecas([[5 3 1][4 0 6][7 8 2]])) -> [puxar(cima), puxar(baixo), puxar(esquerda), puxar(direita)]
-
-
-
-
-ou AcaoJogador(AcoesJogador.puxar(direcao))
