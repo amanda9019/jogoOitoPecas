@@ -1,0 +1,33 @@
+• Definição de estrutura de dados de estados:
+JogoOitoPecas(Ladrilhos), onde Ladrilhos é uma lista bidimensional de 9 elementos do tipo int que vão de 0 à 8. (Sendo o 0 representação do ladrilho vazio)
+
+Exemplos:
+- Estado inicial (podendo ser um estado intermediário qualquer)
+JogoOitoPecas([[5 3 1][4 0 6][7 8 2]])
+
+- Estado intermediário (podendo ser um estado inicial)
+JogoOitoPecas([[1 0 6][4 2 5][7 3 8]])
+
+- Estado final
+JogoOitoPecas([[1 2 3][4 5 6][7 8 0]])
+
+
+
+
+• Definição de estrutura de dados de ações:
+puxar(direcao), onde direcao é um dos elementos de ["cima", "baixo", "direita", "esquerda"].
+
+Essa ação realiza a movimentação do ladrilho localizado na direção escolhida (em relação à posição do ladrilho vazio) para o ladrilho vazio, trocando-os de lugar. Sua restrição é em caso de se puxar uma peça que não existe (como tentar puxar peças além das bordas).
+
+
+
+
+
+Então, dado um estado s, ACOES(s) -> [a1,a2,...,an], onde [a1,a2,...,an] é uma lista de ações válidas para o estado.
+
+Ex: ACOES(JogoOitoPecas([[5 3 1][4 0 6][7 8 2]])) -> [puxar(cima), puxar(baixo), puxar(esquerda), puxar(direita)]
+
+
+
+
+ou AcaoJogador(AcoesJogador.puxar(direcao))

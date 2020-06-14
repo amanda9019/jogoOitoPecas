@@ -1,0 +1,5 @@
+É possível definir uma função heurística que calcula a distância de cada ladrilho até o seu devido ladrilho objetivo em linha reta, analisando seus h(n) e g(n).
+
+É admissível pois o h(n), ou seja, a heurística tem seu valor menor ou igual ao g(n), que por sua vez representa o custo uniforme.
+
+Ex: Um ladrilho no canto inferior direito ir até o canto superior esquerdo tem seu h(n)=4, e como o custo uniforme é 1, no final o g(n) será 4 também.
